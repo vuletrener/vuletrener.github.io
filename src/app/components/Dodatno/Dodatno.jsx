@@ -8,7 +8,7 @@ function Dodatno() {
   return (
     <div className={styles.containerWrapper}>
     <div className={styles.container}>
-        <p className={styles.last}>Ukoliko imaš dodatna pitanja, slobodno me pozovi ili mi pošalji poruku na instagramu<br/><br/><a className={styles.link} href={`tel:${phone}`}>+381 62 1 097 098</a><br/><br/><a className={styles.link} href={websiteUrl} target="_blank" rel="noopener noreferrer">@vuletrener</a></p>
+        <p className={styles.last}>Ukoliko imaš dodatna pitanja, slobodno me pozovi ili mi pošalji poruku na instagram<br/><br/><a className={styles.link} href={`tel:${phone}`}>+381 62 1 097 098</a><br/><br/><a className={styles.link} href={websiteUrl} target="_blank" rel="noopener noreferrer">@vuletrener</a></p>
     </div>
     <p className={styles.end}>Vukašin Veizović - Tvoj trener</p>
     </div>

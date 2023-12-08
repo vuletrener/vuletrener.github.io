@@ -5,10 +5,10 @@ import styles from "./Banner.module.css"
 import Image from 'next/image'
 
 function Banner() {
-  const [name, setName] = useState('marko');
-  const [contactDetails, setContactDetails] = useState('062 4557 457');
+  const [name, setName] = useState('');
+  const [contactDetails, setContactDetails] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
-  const [formSubmitted, setFormSubmitted] = useState(true);
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const [buttonText, setButtonText] = useState("Zakaži moj BESPLATAN probni trening")
 
   const handleNameChange = (e) => {
@@ -48,7 +48,7 @@ function Banner() {
             {formSubmitted ? (
         <div className={styles.successMessage}>
           <p className={styles.successText}>
-            Besplatan probni trening je uspešno zakazan. Uskoro ću te kontaktirati putem SMS-a ili DM-a da potvrdimo vreme. Molim te proveri unete podatke i ukoliko nisu tačni, samo klikni na dugme "Pošalji ponovo" i opet zakaži trening kako bi mogli da potvrdimo isti.<br/><br/><strong>Ime: {name}<br/>Kontakt: {contactDetails}</strong><br/><br/>Hvala na poverenju i vidimo se uskoro! 
+            Uspešno smo zakazali tvoj probni trening. Uskoro ću te kontaktirati putem SMS-a ili DM-a da potvrdimo vreme. Molim te proveri unete podatke i ukoliko nisu tačni, samo klikni na dugme "Pošalji ponovo" i opet zakaži trening kako bi mogli da potvrdimo isti.<br/><br/><strong>Ime: {name}<br/>Kontakt: {contactDetails}</strong><br/><br/>Hvala na poverenju i vidimo se uskoro! 
           </p>
           <button className={styles.buttonAgain} onClick={() => {setFormSubmitted(false); setButtonText("Zakaži moj BESPLATAN probni trening")}}>Pošalji ponovo</button>
         </div>
