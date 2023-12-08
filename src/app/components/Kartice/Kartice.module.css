@@ -1,0 +1,88 @@
+.container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: var(--highlight);
+    color: #fff;
+}
+
+.title {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: .5rem;
+    max-width: 100%;
+}
+
+.card {
+    display: grid;
+    width: 30%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--background1);
+    border-radius: 3px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: var(--softBoxShadow);
+    transition: .4s all ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.cardText {
+    font-size: .9rem;
+    text-align: justify;
+    font-style: italic;
+    max-width: 60ch;
+    text-align-last: center;
+}
+
+.group {
+    display: grid;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.svgIcon {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    fill: rgb(240, 240, 240);
+}
+
+.cardTitle {
+    margin: 0;
+    padding: .3rem 0 0;
+}
+
+@media (max-width: 1332px) {
+    .card {
+        min-width: none;
+        width: 29%;
+    }
+}
+
+@media (max-width: 850px) {
+    .card {
+        width: 95%;
+        padding-bottom: 1rem;
+    }
+}

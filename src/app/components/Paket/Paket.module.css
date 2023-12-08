@@ -1,0 +1,49 @@
+.container {
+    margin-bottom: 5rem;
+}
+.title {
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    padding: 1rem;
+    min-width: none;
+    max-width: 85vw;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: .5s all ease;
+}
+
+.card:hover {
+    background-color: var(--highlight);
+    color: white;
+}
+
+.card:hover .price {
+    border-top: 1px solid white;
+}
+
+.price {
+    margin-top: .5rem;
+    padding-top: .5rem;
+    border-top: 1px solid black;
+    text-align: end;
+    font-size: .9rem;
+    transition: .5s border ease;
+}
+
+@media (min-width: 1000px) {
+    .card {
+        width: 27%;
+    }
+}

@@ -1,0 +1,36 @@
+.containerWrapper {
+    background-color: rgb(100, 100, 100);
+    color: white;
+    text-align: center;
+
+}
+
+.end {
+    padding: 1rem 0;
+    font-style: italic;
+    font-size: .7rem;
+}
+.container {
+    min-height: 7rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: var(--highlight);
+    color: white;
+}
+
+.last {
+    text-align: center;
+    padding: 2rem .5rem;
+    font-size: 1rem;
+}
+
+.link {
+    color: white;
+    transition: .4s all ease;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: black;
+}

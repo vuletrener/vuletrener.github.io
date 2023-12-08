@@ -1,0 +1,12 @@
+.container {
+    margin-bottom: 2rem;
+}
+.title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.pitanja {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,53 @@
+/* Accordion.module.css */
+
+.container {
+  transition: max-height .1s ease;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.containerCollapsed {
+  max-height: 4rem;
+}
+
+.titleWrapper {
+  background-color: var(--darkerBgColor);
+  border-top: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.title {
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.arrowPassive {
+  margin-right: 0.5rem;
+  transition: 1s all ease;
+  color: rgb(70, 70, 70);
+}
+
+.arrowActive {
+  margin-right: 0.5rem;
+  transform: rotateZ(180deg);
+  transition: 1s all ease;
+  color: var(--highlight);
+  font-weight: 700;
+}
+
+.childElementContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0 0.5rem;
+}
+
+.childElementContainer > * {
+  margin: 0;
+}
+
