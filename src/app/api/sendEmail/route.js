@@ -18,13 +18,9 @@ export async function POST(request) {
       to: process.env.MY_EMAIL,
       subject: `${name} šalje zahtev za trening!`,
       html: `
-      <h1>Novi trening je zakazan.</h1>
-      <br/><br/>
       <h2>Ime: ${name}</h2>
       <h2>Kontakt: ${contactDetails}</h2>
       <h2>Datum: ${selectedDate}</h2>
-      <br/><br/>
-      <h2>Potvrdi ovaj trening. Srećno!</h2>
       `,
     };
 

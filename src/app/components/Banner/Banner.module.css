@@ -43,6 +43,11 @@
 .inputDate {
     width: 66.3%;
 }
+
+.redText::placeholder {
+    color: #ff0000;
+}
+
 .button {
     width: 72%;
     margin: 1rem 0 0;
