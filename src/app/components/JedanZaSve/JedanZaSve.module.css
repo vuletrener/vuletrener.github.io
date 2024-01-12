@@ -1,0 +1,78 @@
+.container {
+    margin: 2rem 1rem 2rem;
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "card"
+    "text"
+    ;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title {
+    grid-area: title;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card {
+    grid-area: card;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 1rem;
+    max-width: 80vw;
+}
+
+.list {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.text{
+    grid-area: text;
+    padding: 0 .5rem;
+    text-align: justify;
+    text-align-last: center;
+    margin-bottom: 1rem;
+}
+
+.price {
+    text-align: center;
+    color: var(--highlight);
+    margin-bottom: .5rem;
+}
+
+.price2 {
+    font-size: .8rem;
+    color: black;
+}
+
+
+@media (min-width: 900px) {
+    .container {
+        grid-template-areas: 
+        "title title"
+        "card text";
+    }
+
+    .card {
+        border:none;
+        border-right: 5px solid var(--highlight);
+        padding: 2rem 4rem;
+        border-radius: 0;
+    }
+
+    .list {
+        text-align: left;
+    }
+
+    .text {
+        padding: 1rem 2rem;
+        text-align-last: left;
+    }
+}

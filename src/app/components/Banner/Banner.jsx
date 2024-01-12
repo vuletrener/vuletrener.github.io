@@ -59,7 +59,7 @@ function Banner() {
           Hajde da zajedno izgradimo figuru u kojoj ćeš se osećati savršeno!
         </h1>
         <p className={styles.subtitle}>
-          Na pravi, sportski i zdrav način, bez jo-jo efekata!
+          Zakaži probni trening ovde i ostvari 10% popusta na prvu članarinu.
         </p>
         {formSubmitted ? (
           <div className={styles.successMessage}>

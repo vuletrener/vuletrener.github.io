@@ -7,6 +7,7 @@ import OMeni from './components/OMeni/OMeni'
 import Paket from './components/Paket/Paket'
 import FAQ from './components/FAQ/FAQ'
 import Dodatno from './components/Dodatno/Dodatno'
+import JedanZaSve from './components/JedanZaSve/JedanZaSve'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <OMeni/>
       <Banner/>
       <Kartice/>
-      <Paket />
+      <JedanZaSve />
       <FAQ/>
       <Dodatno/>
     </main>
